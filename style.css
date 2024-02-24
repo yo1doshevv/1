@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    font-family: 'Varela Round' , sans-serif;
+    background-color: unset;
+    
+}
+
+.container{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 52px;
+    border-radius: 30px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+#n1{
+    width: 35%;
+    min-width: 140px;
+    background-color: rgb(255, 94, 94);
+    padding: 6px;
+
+}
+
+#n2{
+    width: 45%;
+    min-width: 180px;
+    padding: 0;
+}
+
+.container .btn-icon{
+    font-size: 18px;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+
+}
+
+.fa-shopping-bag{
+    width: 40px;
+    background-color: rgb(255, 216, 89);
+}
+
+.fa-play{
+    width: 52px;
+    color: rgb(255, 216, 89);
+    border-left: 5px solid rgb(255, 94, 94);
+}
+
+.n1:hover .btn-icon{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.n1:nth-child(1) .next{
+    font-weight: 600;
+}
+
+.n1:nth-child(2) .next{
+    color: white;
+}
+
+.container .n1:hover .next{
+    display: none;
+}
